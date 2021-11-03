@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>01-插值表达式</title>
+    <script src="../js/vue-2.6.12.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <!--使用插值表达式-->
+    <div></div>
+
+    <!--使用 v-html -->
+    <div>aaaaa</div>
+
+</div>
+<script>
+
+    new Vue({
+        el:"#app",
+        data:{
+            message:"<b>hello</b>"
+        }
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>双向绑定</title>
+    <script src="../js/vue-2.6.12.js"></script>
+</head>
+<body>
+
+<div id="app">
+	<b>姓名：</b>
+    <input type="text"><br><br>
+
+
+    <div>
+
+    </div>
+</div>
+
+<script>
+
+    //v-model: 双向绑定。即：
+    //         对于单选按钮、复选框、下拉列表元素，可以设置默认选中状态
+
+	//完成表单的各种组件绑定
+    let app = new Vue({
+        el:"#app",
+        data:{
+            name:"tom"
+        }
+
+    });
+
+</script>
+</body>
+</html>

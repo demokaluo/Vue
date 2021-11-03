@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue-2.6.12.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+	<!-- 给百度一下超链接地址和样式 -->
+    <!-- 如何想绑定css的值，后面必须要加一对大括号 -->
+
+    <a href="url" style="">百度一下</a> <br>
+
+
+</div>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            url:'https://www.baidu.com',
+            aColor:'lime'
+        }
+    });
+
+</script>
+</body>
+</html>

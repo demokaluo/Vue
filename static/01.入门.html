@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue入门</title>
+    <script src="../js/vue-2.6.12.js"></script>
+
+</head>
+<body>
+
+
+<!--视图-->
+<div id="app" >
+    {{ username }}  <!--解析数据：表示获取并输出数据-->
+
+    <button v-on:click="fun1()">{{ message }}</button>
+</div>
+
+<!--脚本-->
+
+<script>
+    let str="123.com";
+    document.write(str);
+
+    new Vue({
+        el:"#app",
+        data:{
+            username:"tom",
+        }
+    });
+
+    new Vue({
+        el:"#app",
+        data: {
+            message:"hello world"
+        },
+        methods:{
+            func1(){
+                alert(123);
+                this.message="你好";
+            }
+        }
+    })
+
+</script>
+
+</body>
+</html>

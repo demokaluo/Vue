@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>05-条件判断</title>
+    <script src="../js/vue-2.6.12.js"></script>
+</head>
+<body>
+<div id="app">
+    <div >欢迎您：{{user.username}}</div>
+    <div >请登录</div>
+</div>
+<script>
+
+    const app = new Vue({
+        el:'#app',
+        data:{
+            user:{username:"tom"}
+        }
+    })
+</script>
+</body>
+</html>

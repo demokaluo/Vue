@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue-2.6.12.js"></script>
+</head>
+<body>
+    <div id="app">
+        我是普通数据类型: {{message}} <b></b> <br/>
+        我是对象数据类型: {{user.username}} <b></b> <br/>
+        我是数组数据类型:  {{arr[1]}}<b></b> <br/>
+        我是数组嵌套对象类型:  {{users[1]}}<b></b> <br/>
+    </div>
+    <script>
+        //插值表达式：{{表达式}}  用于获取和解析数据
+
+		//需求：给div中添加 对象和数组类型数据  （vue完全支持json和数组）
+        //json格式：
+        //数组格式：
+
+        new Vue({
+            el:"#app",
+            data:{
+                message:"hello vue",
+                user:{username:"tom",password:"123",age:18},
+                arr:["apple","orange","banana"],
+                usera:[{username:'tom',password:123,}]
+            }
+        });
+    </script>
+</body>
+</html>
